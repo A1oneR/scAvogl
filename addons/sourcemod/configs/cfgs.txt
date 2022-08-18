@@ -35,13 +35,17 @@
 		{
    			"message" "切换至c8m5屋顶"
 	 	}
-		"changelevel c14m2_lighthouse"
+		"changelevel daylighthouse"
 		{
-			"message" "切换至c14m2灯塔"
+			"message" "切换至Daylight灯塔"
 		}
 		"changelevel cedafever_m3"
 		{
 			"message" "切换至CedaFever Rooftop"
+		}
+		"changelevel bwm4_rooftops"
+		{
+			"message" "切换至BigWat Rooftop"
 		}
 	//	"changelevel c8m1_apartment"
 	//	{
@@ -86,6 +90,13 @@
 	//	{
 	//		"message" "Palvyit 4v4 V.Alpha"
 	//	}
+	}
+	"对抗模式切换"
+	{
+		"exec match/zonemod/4v4.cfg"
+		{
+			"message" "ZoneMod 2.7"
+		}
 	}
 	"训练模式切换"
 	{
