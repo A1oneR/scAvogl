@@ -133,9 +133,6 @@ public Action OnPZEndGamePanelMsg(UserMsg msg_id, Handle bf, const int[] players
 {
 	// Only change the map one time, this is attached to a 
 	// cool down timer after the map was just changed by ACS
-	if (g_bStopACSChangeMap == true)
-		return Plugin_Handled;
-
 	ChangeMapIfNeeded();
 
 	return Plugin_Handled;

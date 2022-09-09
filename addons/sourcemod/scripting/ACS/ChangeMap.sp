@@ -18,7 +18,7 @@ void ChangeMapIfNeeded()
 	if(g_bVotingEnabled == true && g_iWinningMapVotes > 0 && g_iWinningMapIndex >= 0)
 	{
 		if (IsMapIndexValid(g_iWinningMapIndex) == false)
-			return;
+			//return;
 		
 		CreateTimer(g_fWaitTimeBeforeSwitch[g_iGameMode], Timer_ChangeMap, g_iWinningMapIndex);
 		return;
@@ -27,7 +27,7 @@ void ChangeMapIfNeeded()
 	// If no player has chosen a map by voting, then go with the automatic map rotation cycle
 	int iNextMapIndex = FindNextMapIndex();
 	if (IsMapIndexValid(iNextMapIndex) == false)
-		return;
+		//return;
 	
 	// Delayed call to change the map
 	CreateTimer(g_fWaitTimeBeforeSwitch[g_iGameMode], Timer_ChangeMap, iNextMapIndex);
