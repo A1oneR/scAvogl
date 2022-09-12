@@ -14,19 +14,9 @@ void ChangeMapIfNeeded()
 	g_bStopACSChangeMap = true;
 	CreateTimer(REALLOW_ACS_MAP_CHANGE_DELAY, TimerResetCanACSChangeMap);
 
-	// Check to see if someone voted for a map, if so, then change to the winning map
-	if(g_bVotingEnabled == true && g_iWinningMapVotes > 0 && g_iWinningMapIndex >= 0)
-	{
-		if (IsMapIndexValid(g_iWinningMapIndex) == false)
-			//return;
-		
-		CreateTimer(g_fWaitTimeBeforeSwitch[g_iGameMode], Timer_ChangeMap, g_iWinningMapIndex);
-		return;
-	}
-	
 	// If no player has chosen a map by voting, then go with the automatic map rotation cycle
-	int iNextMapIndex = FindNextMapIndex();
-	if (IsMapIndexValid(iNextMapIndex) == false)
+	int iNextMapIndex = FindCurrentMapIndex();
+	//if (IsMapIndexValid(iNextMapIndex) == false)
 		//return;
 	
 	// Delayed call to change the map
