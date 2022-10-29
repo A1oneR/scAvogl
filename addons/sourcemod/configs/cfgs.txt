@@ -37,15 +37,15 @@
 	 	}
 		"changelevel daylighthouse"
 		{
-			"message" "切换至Daylight灯塔"
-		}
-		"changelevel cedafever_m3"
-		{
-			"message" "切换至CedaFever Rooftop"
+			"message" "切换至白日灯塔"
 		}
 		"changelevel bwm4_rooftops"
 		{
 			"message" "切换至BigWat Rooftop"
+		}
+		"changelevel cedafever_m3"
+		{
+			"message" "切换至CedaFever Rooftop"
 		}
 	//	"changelevel c8m1_apartment"
 	//	{
@@ -58,26 +58,14 @@
 		{
 			"message" "Scavogl 4v4 1.1.0"
 		}
-		"exec match/scavogl/charge.cfg"
-		{
-			"message" "ScavCharge!!!"
-		}
 		"exec match/scavogl/chargeT1.cfg"
 		{
 			"message" "ScavCharge!!! [Tier 1 Only]"
 		}
-		"exec match/scavogl/party.cfg"
-		{
-			"message" "ScavParty!!!"
-		}
-		"exec match/scavogl/ride.cfg"
-		{
-			"message" "ScavRide!!!"
-		}
-//		"exec match/scavogl/3v3.cfg"
-//		{
-//			"message" "Scavogl 3v3"
-//		}
+  		"exec match/scavogl/3v3.cfg"
+  		{
+  			"message" "Scavogl 3v3"
+  		}
 	  	"exec match/scavogl/2v2.cfg"
 	  	{
 	  		"message" "Scavogl 2v2"
@@ -90,13 +78,6 @@
 	//	{
 	//		"message" "Palvyit 4v4 V.Alpha"
 	//	}
-	}
-	"对抗模式切换"
-	{
-		"exec match/zonemod/4v4.cfg"
-		{
-			"message" "ZoneMod 2.7"
-		}
 	}
 	"训练模式切换"
 	{
